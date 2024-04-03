@@ -10,7 +10,6 @@ import { FooterComponent } from './footer/footer.component';
 import { OrderComponent } from './main/order/order.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { OtroComponent } from './otro/otro.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +18,7 @@ import { OtroComponent } from './otro/otro.component';
     BookCardComponent,
     FooterComponent,
     OrderComponent,
-    OtroComponent,
+    
   ],
   imports: [
     BrowserModule,
