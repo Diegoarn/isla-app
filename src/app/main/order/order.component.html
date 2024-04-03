@@ -1,0 +1,49 @@
+<div class="login-container">
+  <form>
+    <div>
+      <label class="label">Nombre: </label>
+      <input
+        name="username"
+        [(ngModel)]="username"
+        required
+        #inputUsername="ngModel"
+      />
+      <div
+        *ngIf="inputUsername.invalid && inputUsername.touched"
+        class="error-text"
+      >
+        Nombre vacio
+      </div>
+    </div>
+    <br />
+
+    <div>
+      <label class="label">Email: </label>
+      <input
+        name="email"
+        [(ngModel)]="email"
+        required
+        email
+        #inputEmail="ngModel"
+      />
+      <div *ngIf="inputEmail.invalid && inputEmail.touched" class="error-text">
+        Email erroneo o vacio
+      </div>
+    </div>
+    <br />
+    <textarea
+      rows="10"
+      cols="50"
+      name="texto"
+      [(ngModel)]="text"
+      required
+      #inputText="ngModel"
+    ></textarea>
+    <div *ngIf="inputText.invalid && inputText.touched" class="error-text">
+      Campo vacio
+    </div>
+    <br />
+    <br />
+    <button (click)="sendOrder()">Enviar</button>
+  </form>
+</div>

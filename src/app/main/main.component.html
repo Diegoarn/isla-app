@@ -1,0 +1,87 @@
+<main class="body-container">
+  <h2>Tu librería</h2>
+  <div class="triangulo"></div>
+   
+  <div class="circle"></div>
+  <img src="./assets/libros-1.png" class="libros" />
+  <div class="text-container">
+   
+    <p>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate "
+    </p>
+
+    <app-order></app-order>
+
+    <div class="img-container">
+      <img src="./assets/images/isla1.jpg" alt="foto libreria" />
+      <img src="./assets/images/isla2.jpg" alt="foto libreria" />
+    </div>
+  </div>
+  <!-- <app-order></app-order> -->
+  <h2 id="novedades">Novedades</h2>
+  <div class="triangulo"></div>
+  <div class="nov-container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let book of books">
+        <app-book-card [book]="book"></app-book-card>
+      </div>
+    </div>
+  </div>
+  <h2 id="recomendado">Nos ha gustado</h2>
+  <div class="triangulo"></div>
+  <div class="rec-container">
+    <div class="card">
+      <img src="./assets/libro-mikel.jpg" alt="Portada del libro" />
+      <div class="info">
+        <h3>El Mentiroso</h3>
+        <p>
+          <b>Autor:</b> Mikel Santiago<br /><b>Editorial:</b> Anagrama<br /><b
+            >Año publicación:</b
+          >
+          2023
+        </p>
+      </div>
+    </div>
+    <p>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+      <br />
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+  </div>
+
+  <h2 id="contacto">Contacto</h2>
+  <div class="triangulo"></div>
+  <div class="contacto-container">
+    <map>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.3462358418906!2d-3.9018943247872624!3d40.356846559283156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418e2f12b77117%3A0x463c1dfd8cc9101e!2sC.%20del%20Abrevadero%2C%206%2C%2028670%20Villaviciosa%20de%20Od%C3%B3n%2C%20Madrid!5e0!3m2!1ses!2ses!4v1694510413030!5m2!1ses!2ses"
+        width="400"
+        height="350"
+        style="border: 1px solid rgb(83, 83, 83); border-radius: 8px"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </map>
+    <div class="contacto-text">
+      <p>c/ Abrevadero nº 6, 28670. Villaviciosa de Odón, Madrid.</p>
+      <p>91 616 46 49 isladeltesoro.dh@gmail.com</p>
+      <p>
+        Horario:<br />
+        Lunes - Viernes: 10:00 - 14:00 y 17:00 - 20:00 <br />
+        Sábados: 10:00 - 14:00
+      </p>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+--body-color: #191d19;
+--color-tipografia:rgb(232, 233, 232);
+}
+
+body {
+  background-color: var(--body-color);
+
+  margin: 0px;
+
+  @media screen and (max-width: 1024px){
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,206 @@
+
+
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-tipografia);
+  margin: 0;
+}
+
+.circle {
+  width: 2rem;
+  height: 3rem;
+  background-color: orange;
+  align-self: flex-start;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  opacity: 60%;
+  margin-left: -10%;
+}
+
+.libros {
+  max-width: 25%;
+
+  align-self: flex-start;
+  position: absolute;
+  z-index: 1;
+  margin-left: -10%;
+}
+
+.text-container {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max(420px, 60%);
+  p {
+    font-family: "Poppins", sans-serif;
+    width: max(80px, 60%);
+    font-size: clamp(0.8rem, 1.2vw, 3rem);
+    line-height: 1.5;
+  }
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 16px;
+  img {
+    max-width: 60%;
+    height: 50%;
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    img {
+      max-width: 60%;
+    }
+  }
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-md-4 {
+  align-content: center;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  gap: 5rem;
+}
+.nov-container {
+  padding: auto;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  margin-top: 9%;
+}
+
+.rec-container {
+  background-color: #2e332e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  margin-right: 0px;
+  width: 100%;
+  padding: 3%;
+}
+
+.rec-container p {
+  justify-content: center;
+  width: 50%;
+}
+
+.card {
+  width: 70%;
+  padding: 6px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6%;
+  margin-top: 2%;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.card img {
+  width: max(120px, 22%);
+  height: auto;
+}
+
+.info {
+  width: 40%;
+  @media screen and (max-width: 1024px) {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  font-size: clamp(1rem, 1.1vw, 1.9rem);
+  line-height: 1.5;
+}
+
+.card h3 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(168, 168, 168);
+  margin-left: 0%;
+}
+
+.card p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin-top: 0px;
+  width: 60%;
+  align-content: center;
+}
+
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 30px solid #606d5f;
+  margin-top: -1%;
+}
+
+.contacto-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  gap: 2%;
+  margin-top: 6%;
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+.contacto-text {
+  width: min(80%, 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    align-content: center;
+  }
+}

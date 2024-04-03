@@ -1,0 +1,51 @@
+.ng-valid[required],
+.ng-valid.required {
+  border-left: 3px solid #42a948;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16%;
+  margin-bottom: 16%;
+}
+form{
+  align-content: center;
+  width: 70%;
+}
+.label {
+  display: flex;
+  font-size: 16px;
+  font-size: clamp(.9rem, 1.2vw, 3rem);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+}
+
+input {
+  font-size: 16px;
+  width: min(70%, 320px);
+  height: 30px;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+.error-text {
+  color: rgb(240, 95, 95);
+}
+textarea {
+  border-radius: 5px;
+  font-size: 14px;
+  max-width: 98%;
+}

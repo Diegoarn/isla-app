@@ -1,0 +1,134 @@
+.header-container {
+  background-color: #606d5f;
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  border-bottom: 8px solid #2e332e;
+}
+
+.isla-container {
+  width: 550px; /* Ancho de la base superior del trapecio */
+  height: 0;
+  /* Altura del trapecio */
+  border-bottom: 80px solid #2e332e;
+  border-right: 70px solid transparent; /* Lado derecho del trapecio */
+  // position: relative;
+  // z-index: 0;
+
+  img {
+    padding: 1%;
+    width: 16rem;
+    margin-left: 8rem;
+    margin-top: 0.9rem;
+  }
+}
+
+// .circle {
+//   width: 150px;
+//   height: 150px;
+//   background-color: orange;
+//   border-radius: 50%;
+//   position: absolute;
+//   z-index: 2;
+//   opacity: 60%;
+//   margin-left: -80px;
+//   margin-top: -20px;
+// }
+
+// .libros {
+//   width: 18%;
+//   opacity: 95%;
+//   margin-top: -60px;
+//   margin-left: -60px;
+//   position: absolute;
+//   z-index: 1;
+// }
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  gap: 20%;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  opacity: 60%;
+}
+
+.texto {
+  display: flex;
+  flex-direction: row;
+  gap: 8%;
+  margin-top: 1%;
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-tipografia);
+    opacity: 80%;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  h3:hover {
+    opacity: 25%;
+  }
+}
+
+.twitter {
+  width: 25px;
+  height: 25px;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #606d5f;
+  }
+
+  .isla-container {
+    width: 100%;
+    height: auto;
+    border-bottom: 0px solid #2e332e;
+    border-right: 0px solid transparent;
+    display: flex;
+    justify-content: center;
+
+    border: 0;
+    img {
+      padding: 0.8rem;
+      margin: 0;
+      align-content: center;
+    }
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 2%;
+  }
+
+  .texto {
+    h3 {
+      font-size: 0.8rem;
+    }
+  }
+
+  .logo-container {
+    width: 30%;
+    gap: 8%;
+    opacity: 60%;
+    justify-content: flex-end;
+    padding-right: 1.1rem;
+  }
+}

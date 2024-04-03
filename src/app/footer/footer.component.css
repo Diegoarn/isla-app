@@ -1,0 +1,26 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #2e332e;
+  height: 80px;
+  margin-top: 8%;
+  border-top: 8px solid #4c564b;
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: beige;
+  opacity: 60%;
+}
+
+.twitter {
+  width: 25px;
+  height: 25px;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 5%;
+  opacity: 60%;
+}
