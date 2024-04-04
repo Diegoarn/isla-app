@@ -1,6 +1,3 @@
-
-
-
 .body-container {
   display: flex;
   flex-direction: column;
@@ -10,17 +7,16 @@
 }
 
 .circle {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: orange;
   align-self: flex-start;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   z-index: 2;
   opacity: 60%;
-  margin-top: -150px;
-  margin-left: -250px;
- 
+  margin-top: var(--margen-top);
+  margin-left: -200px;
 }
 
 .libros {
@@ -33,7 +29,7 @@
 }
 
 .text-container {
-  margin-top: 3%;
+  margin-top: var(--margen-top);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +46,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: var(--margen-top);
   gap: 16px;
   img {
     max-width: 60%;
@@ -81,12 +77,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 4%;
+  margin-top: var(--margen-top);
   gap: 5rem;
 }
 .nov-container {
   padding: auto;
-  margin-top: 4%;
+  margin-top: var(--margen-top);
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -105,15 +101,18 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4%;
+  margin-top: var(--margen-top);
   margin-right: 0px;
   width: 100%;
   padding: 3%;
-}
-
-.rec-container p {
-  justify-content: center;
-  width: 50%;
+  p {
+    font-family: "Poppins", sans-serif;
+    width: max(80px, 60%);
+    font-size: clamp(0.8rem, 1.2vw, 3rem);
+    line-height: 1.5;
+    justify-content: center;
+    width: 50%;
+  }
 }
 
 .card {
@@ -126,16 +125,27 @@ h2 {
   align-items: center;
   gap: 6%;
   margin-top: 2%;
+  img {
+    width: max(120px, 22%);
+    height: auto;
+  }
+  h3 {
+    font-family: "Roboto", sans-serif;
+    color: rgb(168, 168, 168);
+    margin-left: 0%;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin-top: 0px;
+    width: 60%;
+    align-content: center;
+  }
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
     align-content: center;
   }
-}
-
-.card img {
-  width: max(120px, 22%);
-  height: auto;
 }
 
 .info {
@@ -148,27 +158,6 @@ h2 {
     justify-content: center;
     align-items: center;
   }
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  width: 50%;
-  font-size: clamp(1rem, 1.1vw, 1.9rem);
-  line-height: 1.5;
-}
-
-.card h3 {
-  font-family: "Roboto", sans-serif;
-  color: rgb(168, 168, 168);
-  margin-left: 0%;
-}
-
-.card p {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0px;
-  margin-top: 0px;
-  width: 60%;
-  align-content: center;
 }
 
 .triangulo {
@@ -186,15 +175,20 @@ p {
   justify-content: space-between;
 
   gap: 2%;
-  margin-top: 6%;
+  margin-top:var(--margen-top);
+  p {
+    font-family: "Poppins", sans-serif;
+    width: 50%;
+    font-size: clamp(1rem, 1.1vw, 1.9rem);
+    line-height: 1.5;
+  }
+
   @media screen and (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-
-
 
 .contacto-text {
   width: min(80%, 50%);
