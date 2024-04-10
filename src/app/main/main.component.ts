@@ -8,25 +8,25 @@ import { Books} from '../modelos.model'
 export class MainComponent implements OnInit {
   books: Books[] = [
     {
-      title: 'El Gran Gatsby',
-      author: 'F. Scott Fitzgerald',
+      title: 'Todos los hombres del rey',
+      author: 'Laura Gallego',
       description:
-        'La historia del misterioso Jay Gatsby y su amor por Daisy Buchanan.',
-      imageUrl: './assets/gatsby.jpg',
+        'Una historia de amor verdadero que continúa el universo de Todas las hadas del reino. Felicia ha alcanzado su final feliz y ha vuelto a casa de la mano de su príncipe desencantado. Ha pagado por ello un alto precio: renunciara la protección de su hada madrina. ',
+      imageUrl: './assets/todos-los-hombres.jpg',
     },
     {
-      title: 'El Gran Gatsby',
-      author: 'F. Scott Fitzgerald',
+      title: 'Aunque llueva en primavera',
+      author: 'Cherry Chic',
       description:
-        'La historia del misterioso Jay Gatsby y su amor por Daisy Buchanan.',
-      imageUrl: './assets/gatsby.jpg',
+        'Existe un lugar en el mundo, entre pastos verdes, ríos helados y calles empedradas, en el que el sol no sale mucho y, aun así, congrega a los habitantes más cálidos que puedas imaginar.',
+      imageUrl: './assets/aunque-llueva.jpg',
     },
     {
-      title: 'El Gran Gatsby',
-      author: 'F. Scott Fitzgerald',
+      title: 'Un te quiero a destiempo',
+      author: 'Susana Rubio',
       description:
-        'La historia del misterioso Jay Gatsby y su amor por Daisy Buchanan.',
-      imageUrl: './assets/gatsby.jpg',
+        'Gabriela está enamorada, pero de repente todo se rompe en mil pedazos. El dolor, la culpa, y los recuerdos la persiguen, y acude a sus amigas, que son su mejor refugio. Parece que nada la deja avanzar, hasta que un día aparece un rayo de luz en su vida.',
+      imageUrl: './assets/un-te-quiero.jpg',
     },
   ];
   constructor() {}

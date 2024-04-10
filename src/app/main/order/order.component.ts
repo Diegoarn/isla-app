@@ -10,5 +10,8 @@ export class OrderComponent {
   email = '';
   text = '';
 
-  sendOrder() {}
+  sendOrder() {};
+  alert() {
+    window.alert("Aplicación en prueba")
+  }
 }

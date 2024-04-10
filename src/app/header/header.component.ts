@@ -15,4 +15,8 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  alert() {
+    window.alert('Aplicación en pruebas')
+  }
 }

@@ -2,13 +2,15 @@
   border: 1px solid #ccc;
   border-radius: 8px;
 
-  margin-bottom: 20px;
-  max-width: 12em;
+  // margin-bottom: 20px;
+  width: 14rem;
+  height: 44rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-items: center;
   background-color: rgb(241, 241, 241);
+  font-family:' Roboto', sans-serif;
 
 }
 
@@ -17,10 +19,11 @@
   object-fit: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  margin-top: 1rem;
 }
 
 .card-body {
-  padding: 20px;
+  padding: 16px;
 }
 
 .card-title {

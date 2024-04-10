@@ -18,54 +18,39 @@
 
   img {
     padding: 1%;
-    width: 16rem;
+    width: 17rem;
     margin-left: 8rem;
     margin-top: 0.9rem;
   }
 }
 
-// .circle {
-//   width: 150px;
-//   height: 150px;
-//   background-color: orange;
-//   border-radius: 50%;
-//   position: absolute;
-//   z-index: 2;
-//   opacity: 60%;
-//   margin-left: -80px;
-//   margin-top: -20px;
-// }
-
-// .libros {
-//   width: 18%;
-//   opacity: 95%;
-//   margin-top: -60px;
-//   margin-left: -60px;
-//   position: absolute;
-//   z-index: 1;
-// }
-
 .menu-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 60%;
-  gap: 20%;
+
 }
 
 .logo-container {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  opacity: 60%;
+  width: 20%;
 }
 
 .texto {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   gap: 8%;
   margin-top: 1%;
+  .twitter {
+    padding-right: 4rem;
+    width: 32px;
+    height: 32px;
+    opacity: 60%;
+    cursor: pointer;
+  }
   h3 {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-tipografia);
@@ -79,13 +64,9 @@
   }
 }
 
-.twitter {
-  width: 25px;
-  height: 25px;
-  opacity: 80%;
-}
 
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 820px) {
   .header-container {
     display: flex;
     flex-direction: column;
