@@ -2,9 +2,9 @@
   background-color: #606d5f;
   display: flex;
   flex-direction: row;
-
   width: 100%;
   border-bottom: 8px solid #2e332e;
+ margin: -10px -10px 0px;
 }
 
 .isla-container {
@@ -30,6 +30,7 @@
   justify-content: center;
   align-items: center;
   width: 60%;
+  padding-right: 8rem;
 
 }
 
@@ -45,11 +46,11 @@
   gap: 8%;
   margin-top: 1%;
   .twitter {
-    padding-right: 4rem;
     width: 32px;
     height: 32px;
     opacity: 60%;
     cursor: pointer;
+    padding-left: 1rem;
   }
   h3 {
     font-family: Arial, Helvetica, sans-serif;
@@ -93,21 +94,16 @@
   .menu-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 2%;
+    padding-right: 1.5rem;
   }
 
-
-
-  .logo-container {
-    width: 30%;
-    gap: 8%;
-    opacity: 60%;
-    justify-content: flex-end;
-    padding-right: 1.1rem;
-  }
+.texto {
+  align-items: center;
+  gap: 4%;
+}
 
   h3:hover {
     opacity: 100%;

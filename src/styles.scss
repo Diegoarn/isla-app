@@ -4,13 +4,9 @@
   --color-tipografia: rgb(232, 233, 232);
   --margen-top: 4rem;
   --texto-size: clamp(1rem, 2vw + 1rem, 1.125rem);
+
 }
 body {
   background-color: var(--body-color);
 
-  margin: 0px;
-
-  @media screen and (max-width: 1024px) {
-    margin-left: 0;
-  }
 }
