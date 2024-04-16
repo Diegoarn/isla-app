@@ -1,10 +1,16 @@
+header{
+
+  margin: -8px;
+}
+
 .header-container {
   background-color: #606d5f;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 110%;
   border-bottom: 8px solid #2e332e;
- margin: -10px -10px 0px;
+//  margin: -10px -10px;
+//  margin-right: -10rem;
 }
 
 .isla-container {
@@ -30,7 +36,7 @@
   justify-content: center;
   align-items: center;
   width: 60%;
-  padding-right: 8rem;
+  padding-right: 9rem;
 
 }
 
@@ -73,6 +79,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #606d5f;
+  
   }
 
   .isla-container {
@@ -82,10 +89,11 @@
     border-right: 0px solid transparent;
     display: flex;
     justify-content: center;
-
+    
     border: 0;
     img {
-      padding: 0.8rem;
+      // padding: 0.8rem;
+      padding-top: 2rem;
       margin: 0;
       align-content: center;
     }
