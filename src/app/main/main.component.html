@@ -23,16 +23,16 @@
   </div>
   <h2 id="novedades">Novedades</h2>
   <div class="triangulo"></div>
-  <div class="nov-container">
-    <div class="row">
+  <section class="nov-container">
+    <article class="row">
       <div class="col-md-4" *ngFor="let book of books">
         <app-book-card [book]="book"></app-book-card>
       </div>
-    </div>
-  </div>
+    </article>
+  </section>
   <h2 id="recomendado">Nos ha gustado</h2>
   <div class="triangulo"></div>
-  <div class="rec-container">
+  <section class="rec-container">
     <div class="card">
       <img src="./assets/libro-mikel.jpg" alt="Portada del libro" />
       <div class="info">
@@ -50,7 +50,7 @@
       <br>En la primera escena, el protagonista despierta en una fábrica abandonada junto al cadáver de un hombre desconocido y una piedra con restos de sangre. Cuando huye, decide tratar de reconstruir el mismo los hechos. Sin embargo, tiene un problema: no recuerda apenas nada de lo ocurrido en las últimas cuarenta y ocho horas. Y lo poco que sí sabe es mejor no contárselo a nadie.
       Así arranca este thriller que nos traslada a un pueblo costero del País Vasco, entre sinuosas carreteras al borde de acantilados y casas de muros resquebrajados por las noches de tormenta: una pequeña comunidad donde, solo aparentem
     </p>
-  </div>
+  </section>
 
   <h2 id="contacto">Contacto</h2>
   <div class="triangulo"></div>

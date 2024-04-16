@@ -7,8 +7,9 @@
   margin-top: 8%;
   border-top: 8px solid #4c564b;
 }
-p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+h2 {
+  font-family: "Geneva", sans-serif;
+  font-size: clamp(1rem, 1vh, 3rem);
   color: beige;
   opacity: 60%;
 }

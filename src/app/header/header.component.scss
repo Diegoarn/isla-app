@@ -55,7 +55,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-tipografia);
     opacity: 80%;
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 1vw + 0.75rem, 1.125rem);
     cursor: pointer;
   }
 
@@ -99,11 +99,7 @@
     gap: 2%;
   }
 
-  .texto {
-    h3 {
-      font-size: 0.8rem;
-    }
-  }
+
 
   .logo-container {
     width: 30%;
