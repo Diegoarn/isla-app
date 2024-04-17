@@ -12,6 +12,6 @@ export class OrderComponent {
 
   sendOrder() {};
   alert() {
-    window.alert("Aplicación en prueba")
+    window.alert("Aplicación en pruebas")
   }
 }
