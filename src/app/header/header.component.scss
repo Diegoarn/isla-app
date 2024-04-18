@@ -114,7 +114,9 @@ header{
   align-items: center;
   gap: 4%;
   padding-right: 3rem;
-
+  .twitter {
+    padding-left: 0;
+  }
   h3:hover {
     opacity: 100%;
   }
