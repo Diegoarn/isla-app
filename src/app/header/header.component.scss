@@ -1,4 +1,4 @@
-header{
+header {
   width: 110%;
   margin: -8px -8px -10px;
 }
@@ -7,7 +7,7 @@ header{
   background-color: #606d5f;
   display: flex;
   flex-direction: row;
- align-items: center;
+  align-items: center;
   border-bottom: 8px solid #2e332e;
 }
 
@@ -19,13 +19,11 @@ header{
   border-right: 70px solid transparent; /* Lado derecho del trapecio */
   // position: relative;
   // z-index: 0;
-  
 
   img {
     padding: 1%;
     width: 17rem;
     margin-left: 10%;
-  
     margin-top: 0.9rem;
   }
 }
@@ -37,7 +35,6 @@ header{
   align-items: center;
   width: 60%;
   padding-right: 9rem;
-
 }
 
 .logo-container {
@@ -51,27 +48,27 @@ header{
   justify-content: flex-start;
   gap: 8%;
   margin-top: 1%;
-  
+
   .twitter {
     width: 32px;
     height: 32px;
     opacity: 60%;
     cursor: pointer;
-    padding-left: 1rem;
+    padding-left: 1.2rem;
+    @media screen and (max-width: 450px) {
+      padding-left: 0;
+    }
   }
   h3 {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-tipografia);
     opacity: 80%;
-    font-size: clamp(.8rem, 160vw - .8rem, 1rem);;
+    font-size: clamp(0.8rem, 160vw - 0.8rem, 1rem);
     cursor: pointer;
   }
-
   h3:hover {
     opacity: 25%;
-  
-}
-
+  }
 }
 
 @media screen and (max-width: 845px) {
@@ -80,7 +77,6 @@ header{
     flex-direction: column;
     align-items: center;
     background-color: #606d5f;
-  
   }
 
   .isla-container {
@@ -90,7 +86,7 @@ header{
     border-right: 0px solid transparent;
     display: flex;
     justify-content: center;
-    
+
     border: 0;
     img {
       // padding: 0.8rem;
@@ -110,17 +106,12 @@ header{
     padding-left: 0.5rem;
   }
 
-.texto {
-  align-items: center;
-  gap: 4%;
-  padding-right: 3rem;
-  .twitter {
-    padding-left: 0;
+  .texto {
+    align-items: center;
+    gap: 4%;
+    padding-right: 3rem;
+    h3:hover {
+      opacity: 100%;
+    }
   }
-  h3:hover {
-    opacity: 100%;
-  }
-}
-
-
 }
