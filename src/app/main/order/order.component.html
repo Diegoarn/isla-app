@@ -12,7 +12,7 @@
         *ngIf="inputUsername.invalid && inputUsername.touched"
         class="error-text"
       >
-        Nombre vacio
+        Nombre vacío
       </div>
     </div>
     <br />
@@ -27,7 +27,7 @@
         #inputEmail="ngModel"
       />
       <div *ngIf="inputEmail.invalid && inputEmail.touched" class="error-text">
-        Email erroneo o vacio
+        Email no válido o vacío
       </div>
     </div>
     <br />
@@ -40,7 +40,7 @@
       #inputText="ngModel"
     ></textarea>
     <div *ngIf="inputText.invalid && inputText.touched" class="error-text">
-      Campo vacio
+      Campo vacío
     </div>
     <br />
     <br />
