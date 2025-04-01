@@ -38,10 +38,11 @@
   justify-content: center;
   margin-top: var(--margen-top);
   width: 100%;
+  
 
   img {
     width: max(150px, 22%);
-    // height: 50%;
+    aspect-ratio: 2/1.5;
     border: 2px solid rgb(63, 63, 63);
   }
 
@@ -101,7 +102,7 @@ h2 {
     width: 50%;
 
     @media screen and (max-width: 450px) {
-      width: 75%;
+      width: 90%;
     }
   }
 }
@@ -118,6 +119,7 @@ h2 {
   img {
     width: max(120px, 22%);
     height: auto;
+    aspect-ratio: 1/1.5;
   }
   h3 {
     font-family: "Roboto", sans-serif;
@@ -132,6 +134,7 @@ h2 {
     align-content: center;
   }
   @media screen and (max-width: 1024px) {
+    width: 95%;
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -141,7 +144,7 @@ h2 {
 .info {
   width: 40%;
   @media screen and (max-width: 1024px) {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -202,14 +205,11 @@ iframe {
 }
 
 .btn-flotante {
-  font-size: 16px; /* Cambiar el tamaño de la tipografia */
-  text-transform: uppercase; /* Texto en mayusculas */
-  font-weight: bold; /* Fuente en negrita o bold */
-  color: #ffffff; /* Color del texto */
-  border-radius: 5px; /* Borde del boton */
-  letter-spacing: 2px; /* Espacio entre letras */
-  background-color: #fca402; /* Color de fondo */
-  padding: 12px 26px; /* Relleno del boton */
+  font-size: 16px; 
+  color: #ffffff; 
+  border-radius: 5px; 
+  background-color: #fca402; 
+  padding: 12px 26px; 
   position: fixed;
   bottom: 3%;
   right: 6%;

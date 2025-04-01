@@ -12,13 +12,10 @@ header {
 }
 
 .isla-container {
-  width: 550px; /* Ancho de la base superior del trapecio */
+  width: 550px;
   height: 0;
-  /* Altura del trapecio */
   border-bottom: 80px solid #2e332e;
-  border-right: 70px solid transparent; /* Lado derecho del trapecio */
-  // position: relative;
-  // z-index: 0;
+  border-right: 70px solid transparent;
 
   img {
     padding: 1%;
@@ -61,8 +58,9 @@ header {
   }
   h3 {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--color-tipografia);
-    opacity: 80%;
+    // color: var(--color-tipografia);
+    color: #ffffff;
+    
     font-size: clamp(0.8rem, 160vw - 0.8rem, 1rem);
     cursor: pointer;
   }
@@ -89,8 +87,6 @@ header {
 
     border: 0;
     img {
-      // padding: 0.8rem;
-      // padding-top: 1.5rem;
       margin-left: -7%;
       align-content: center;
     }
