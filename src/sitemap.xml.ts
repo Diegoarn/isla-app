@@ -5,8 +5,8 @@ export function generateSitemap(): string {
     .ele('urlset', { xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9' });
 
   const urls = [
-    { loc: 'https://www.example.com/', lastmod: '2024-04-23', changefreq: 'daily', priority: '1.0' },
-    { loc: 'https://www.example.com/about', lastmod: '2024-04-23', changefreq: 'daily', priority: '0.8' },
+    { loc: 'https://isla-app.vercel.app/', lastmod: '2024-04-23', changefreq: 'daily', priority: '1.0' },
+    { loc: 'https://isla-app.vercel.app/about', lastmod: '2024-04-23', changefreq: 'daily', priority: '0.8' },
   ];
 
   urls.forEach((url) => {
